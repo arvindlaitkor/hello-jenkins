@@ -41,8 +41,8 @@ COPY Makefile /root/
 COPY git.sh /root/
 RUN chmod +x /root/git.sh
 
-COPY http1.go /root/go/src
-COPY docker-entry.sh /root
+COPY http1.go /root/
+COPY docker-entry.sh /root/
 RUN chmod +x /root/docker-entry.sh
 ENTRYPOINT ["/root/docker-entry.sh"]
 EXPOSE 8080

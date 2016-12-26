@@ -5,5 +5,5 @@ echo "/root/go/src/github.com/mattermost/    *(rw,sync,no_root_squash,no_subtree
 exportfs -a
 /usr/sbin/sshd
 echo "Starting fake server"
-cd /root/go/src
+cd /root/
 /usr/local/go/bin/go run http1.go
