@@ -10,7 +10,7 @@ COPY package.json /usr/src/package.json
 
 # Install app dependencies
 RUN npm install
-
+RUN npm install -g harp
 # Bundle app source and tests
 COPY app.js /usr/src/
 COPY test /usr/src/test
